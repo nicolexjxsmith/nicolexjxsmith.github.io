@@ -1,0 +1,658 @@
+/*--- All Site ---*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+/*--- Header ---*/
+.header{
+    width: 100%;
+    min-height: 60px;
+    padding-left:10%;
+    padding-right: 10%;
+    background: #ffffff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Logo{
+    width: 200px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.header i{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right:30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #001486;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav a:hover {
+    color:#e23f91
+}
+
+nav img{
+    height: 200px;
+    width: 200px;
+    border: 2px solid clear;
+}
+
+main {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 50px;
+    color: #001486;
+}
+@media only screen and (max-width: 700px){
+    nav ul{
+        width: 100%;
+        background: white;
+        position:absolute;
+        top: 80px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    nav ul li a{
+        color: #001486;
+    }
+    .header i{
+        color: #001486;
+        display:block;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+}
+
+/*--- Booking & Shop Button ---*/
+section{ 
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title{
+    background-position: center;
+    text-align: center;
+    font-size: 40px;
+    color: #001486;
+    font-family: 'Koulen', sans-serif;
+}
+
+.row{
+    display: flex;
+    align-items:center ;
+    width: 100%;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+.row .column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row .column i{
+    width: 80%;
+    color: #e23f91;
+}
+
+.ShopBooking .row{
+    margin-top: 50px;
+}
+
+h4{ 
+    font-size: 50px;
+    color: #001486 ;
+    margin: 15px auto;
+}
+
+p{
+    font-size: 20px;
+    color:#001486 ;
+    padding: 15px 40px;
+}
+
+.ShopBooking .ctn{
+    margin-top: 30px;
+    font-size: 30px;
+}
+button{
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #4c67ff ;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: 3.0s ease;
+}
+
+button:hover{
+    background-color: #e23f91;
+}
+
+@media only screen and (max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+    .column i{
+        padding-top:60px;
+        max-width: 90%;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    .team .col{
+        width: 100%;
+    }
+    .image-gallery{
+        justify-content: center;
+        align-items: center;
+    }
+    .image-gallery img{
+        width: 100%;
+        transform: translateX(-20px);
+    }
+    .col p{
+        transform: translateX(-50px);
+    }
+}
+/*--- Team Info---*/  
+
+.team .row .col {
+    width: 50%;
+}
+
+.team .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    width: 100%;
+    align-items: center;
+}
+
+.image-gallery img{
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    object-fit:fill;
+}
+
+.col{
+    width: 35%;
+}
+
+.col-image{
+    width: 60%;
+}
+
+.col h1{
+    font-size: 40px;
+    color: #001486;
+}
+
+.col p{
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+}
+
+/*--- Artist Info ---*/
+body {
+    background: url(B&WTalavera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding:0;
+}
+
+h1 {
+    font-size: 65px;
+    color: #001486;
+    font-family: 'Koulen', sans-serif;
+}
+
+h2 {
+    font-size: 25px;
+    color: #001486;
+    font-family: 'Poppins', sans-serif;
+}
+
+main li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+main li a{
+    text-decoration: none;
+    color: #001486;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+main a:hover {
+    text-decoration: underline;
+}
+
+.artist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.artist-portrait {
+    width: 300px;
+    height: 450px;
+    margin-bottom: 80px;
+    padding-top: 10px;
+}
+
+.artist img{
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+    object-fit:fill;
+}
+
+.about-header {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.about-artist{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.about-portrait {
+    background-color: #C1C0BE;
+    width: 48%;
+    height: 200px;
+}
+
+.about-content {
+    margin-top: 20px;
+
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    color: #001486;
+}
+.bf-col-3 button{
+    align-items: center;
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #4c67ff ;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: 2.0s ease;
+    transform: translateX(325px);
+}
+
+button:hover{
+    background-color: #e23f91;
+}
+
+/*--- Booking ---*/
+.bf-cont{
+    margin: 0;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+.bf-container{
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 16px;
+   
+}
+
+.bf-head{
+    text-align: center;
+}
+
+.bf-head h1{
+    font-size: 40px;
+    color: #001486;
+}
+
+.bf-head p{
+    color:#4c67ff;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bf-head i{ 
+    height: 80px;
+    color:#e23f91;
+}
+
+.bf-body{
+    object-fit:none;
+}
+
+input, textarea, select{
+    width: 100%;
+    background-color: #e6e6e6;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 5px;
+    resize: none;
+    color:#8d8c8c;
+}
+
+.bf-col-12 p{
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    text-align: left;
+}
+
+.bf-col-6 p{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+.bf-body-box{
+    padding: 20px;
+}
+
+.bf-col-12{
+    width: 100%;
+}
+
+.bf-col-3{
+    width: 30%;
+    padding: 15px;
+}
+
+.bf-col-6{
+    width: 50%;
+}
+
+@media screen and (max-width:600px){
+.bf-row{
+    flex-direction: column;
+    padding: 0;
+}
+.bf-col-12{
+    padding: 10px 0;
+    width: 100%;
+}
+.bf-col-6{
+    padding: 10px 0;
+    width: 100%;
+}
+.bf-col-3{
+    padding: 10px 0;
+    width: 100%;
+}
+.bf-container{
+    padding: 50px 16px;
+}
+.artist img{
+    transform: translateX(-10px);
+}
+}
+
+/*--- Contact Us Info ---*/
+.contact{ 
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+.container h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #001486;
+    font-family: 'Koulen', sans-serif;
+}
+
+.contact-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+}
+
+.contact-form{
+    text-align: left;
+}
+
+.contact-form h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #001486;
+    font-family: 'Poppins', sans-serif;
+}
+.form-group{
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #e6e6e6;
+    color: #001486;
+    font-family: 'Poppins', sans-serif;
+}
+
+input:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+
+button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4c67ff ;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: 2.0s ease;
+}
+
+button:hover{
+    background-color:#e23f91;
+}
+
+.contact-info{
+    text-align: left;
+}
+
+.contact-info h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #001486;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-info p{
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #001486;
+}
+
+.contact-info i{
+    color:#e23f91;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 700px){
+    .container{ 
+        transform: translateX(-50px);
+        padding: 20px;
+    }
+    .contact-wrapper{
+        grid-template-columns:1fr;
+    }
+    .products .card{
+        transform: translateX(-20px);
+    }
+}
+
+/*--- Shop---*/
+.sec{
+    padding: 10px 5%;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.products .card{
+    width: 310px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px #8d8c8c;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.products .card img{
+    height: 250px;
+    width: 100%;
+
+}
+
+.products .card .desc{
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+
+.products .card .title{ 
+    font-weight: 900;
+    font-size: 20px;
+    color: #001486;
+    padding: 0 20px;
+}
+
+.products .card .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.products .card .box .price{
+    color: #e23f91;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.products .card .box .btn{
+    font-size: 13px;
+    background-color: #ffffff;
+    color: #e23f91;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid #e23f91;
+    border-radius: 20px;
+}
+
+.desc{
+    font-family: 'Poppins', sans-serif;
+    color: #001486;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.products .card .box .btn:hover{
+    cursor: pointer;
+    background-color: #e23f91;
+    color:#ffffff
+}
+
+/*--- Social Media Icons ---*/
+main i{
+    height: 13px;
+    margin: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #e23f91;
+}
+
+main p{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*--- Footer Extra Info ---*/
+footer {
+    background-color: #001486;
+    padding: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer a {
+    color: #fff7e9;
+    text-decoration: none;
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
