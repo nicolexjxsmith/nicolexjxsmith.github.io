@@ -24,13 +24,13 @@
 }
 
 .Logo{
-    width: 200px;
+    width: 300px;
     cursor: pointer;
     margin: 30px 0;
 }
 
 .header i{
-    width: 25px;
+    width: 30px;
     cursor: pointer;
     display: none;
 }
